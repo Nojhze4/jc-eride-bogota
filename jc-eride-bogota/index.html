@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1f9d61" />
+    <title>Juan Carlos E-Ride Bogotá Tours — Private Electric Tours</title>
+    <meta
+      name="description"
+      content="Private and personalized tours in Bogotá and nearby destinations in a 100% electric vehicle. Meet Juan Carlos and explore Bogotá your way."
+    />
+    <link rel="canonical" href="https://your-domain.example/" />
+    <meta property="og:title" content="Juan Carlos E-Ride Bogotá Tours" />
+    <meta
+      property="og:description"
+      content="Private and personalized tours in Bogotá and nearby destinations in a 100% electric vehicle."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.example/" />
+    <meta property="og:image" content="assets/images/monserrate.jpeg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=2" />
+  </head>
+  <body>
+    <a id="top"></a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a class="brand-link" href="#top" aria-label="Ir al inicio">
+            <img
+              class="logo-icon"
+              src="assets/images/logo.jpg"
+              alt="JC-E-Ride-Bogotá-Tours-logo"
+              width="48"
+              height="48"
+            />
+            <span class="logo-text">
+              <span class="logo-primary">JC E-Ride</span>
+              <small class="logo-sub">Bogotá Tours</small>
+            </span>
+          </a>
+        </div>
+
+        <nav
+          class="navbar navbar-expand-lg navbar-light p-0"
+          aria-label="Main navigation"
+        >
+          <button
+            id="nav-toggle"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            id="mainNavbar"
+            class="collapse navbar-collapse justify-content-center"
+          >
+            <ul id="nav-list" class="navbar-nav align-items-lg-center gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero" data-i18n="navHome">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tours" data-i18n="navTours">Tours en Bogotá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Paquetes Turísticos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#transport">Transporte Especial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#electric" data-i18n="navElectric"
+                  >Vehículo Eléctrico</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-i18n="navAbout"
+                  >Sobre Juan Carlos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-i18n="navContact"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <div class="translate-wrap">
+            <button
+              id="translateBtn"
+              class="btn translate-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="languageMenu"
+              aria-label="Translate page"
+            >
+              <span class="translate-icon"
+                ><i class="bi bi-translate"></i
+              ></span>
+              <span class="translate-label" data-i18n="translateButton"
+                >Traducir</span
+              >
+            </button>
+            <div id="languageMenu" class="language-menu" hidden>
+              <label class="visually-hidden" for="languageSelect"
+                >Seleccionar idioma</label
+              >
+              <select id="languageSelect" aria-label="Seleccionar idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="zh">中文</option>
+                <option value="ar">العربية</option>
+              </select>
+            </div>
+          </div>
+          <a id="bookWhatsapp" class="btn primary" data-i18n="ctaBook" href="#"
+            >Reservar por WhatsApp</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-media">
+          <img
+            src="assets/images/monserrate.jpeg"
+            alt="Scenic view of Bogotá"
+            loading="lazy"
+          />
+        </div>
+        <div class="hero-content container">
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            ¿Nuevo en Bogotá? Deja que Juan Carlos te ayude a explorar la
+            ciudad.
+          </p>
+          <h1 data-i18n="heroTitle">
+            Descubre Bogotá en un recorrido privado 100% eléctrico
+          </h1>
+          <p class="lead" data-i18n="heroLead">
+            Tours privados y personalizados en Bogotá y sus alrededores, con
+            Juan Carlos.
+          </p>
+          <div class="hero-ctas">
+            <a
+              id="hero-book"
+              class="btn large primary"
+              href="#contact"
+              data-i18n="heroPrimaryCta"
+              >Reservar mi tour</a
+            >
+            <a
+              class="btn large ghost"
+              href="#tours"
+              data-i18n="heroSecondaryCta"
+              >Conocer los tours</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section benefits">
+        <div class="container">
+        <h3 class="section-title" data-i18n="benefitsTitle">
+          ¿Por qué elegir JC E-Ride?
+        </h3>
+        <div class="cards">
+          <article class="card">
+            <h4 data-i18n="benefitElectricTitle">100 % Eléctrico</h4>
+            <p data-i18n="benefitElectricText">
+              Recorre Bogotá en un vehículo completamente eléctrico, silencioso
+              y moderno.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="benefitPrivateTitle">Tour Privado</h4>
+            <p data-i18n="benefitPrivateText">
+              Disfruta de una experiencia privada sin compartir el vehículo con
+              otros turistas.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="benefitPersonalizedTitle">Personalizado</h4>
+            <p data-i18n="benefitPersonalizedText">
+              El recorrido puede adaptarse a tus intereses, tiempo disponible y
+              preferencias.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="benefitLocalTitle">Experiencia Local</h4>
+            <p data-i18n="benefitLocalText">
+              Conoce Bogotá acompañado por Juan Carlos y recibe una atención
+              cercana durante tu recorrido.
+            </p>
+          </article>
+        </div>
+        </div>
+      </section>
+
+      <section id="tours" class="section container tours">
+        <h3 class="section-title" data-i18n="toursTitle">
+          Explora Bogotá a tu manera
+        </h3>
+        <div class="tours-grid">
+          <article class="tour-card">
+            <img class="tour-image" src="assets/images/monserrate.jpeg" alt="Monserrate y la ciudad de Bogotá" loading="lazy" />
+            <h4 data-i18n="tourEssentialsTitle">Bogotá esencial</h4>
+            <p>
+              Recorrido por algunos de los lugares más representativos de
+              Bogotá.
+            </p>
+            <div class="tour-actions">
+              <button class="btn ghost" data-i18n="askTour">
+                Pregunta sobre este tour
+              </button>
+              <button class="btn" data-whatsapp data-i18n="bookWhatsApp">
+                Reservar por WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <img class="tour-image" src="assets/images/monserrate.jpeg" alt="La Candelaria, Bogotá" loading="lazy" />
+            <h4 data-i18n="tourHistoricTitle">Bogotá histórica</h4>
+            <p>
+              Experiencia enfocada en el centro histórico y sus principales
+              atractivos.
+            </p>
+            <div class="tour-actions">
+              <button class="btn ghost" data-i18n="askTour">
+                Pregunta sobre este tour
+              </button>
+              <button class="btn" data-whatsapp data-i18n="bookWhatsApp">
+                Reservar por WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <img class="tour-image" src="assets/images/monserrate.jpeg" alt="Catedral de Sal de Zipaquirá" loading="lazy" />
+            <h4 data-i18n="tourMonserrateTitle">Bogotá y Monserrate</h4>
+            <p>
+              Tour privado combinando algunos de los lugares más importantes de
+              la ciudad.
+            </p>
+            <div class="tour-actions">
+              <button class="btn ghost" data-i18n="askTour">
+                Pregunta sobre este tour
+              </button>
+              <button class="btn" data-whatsapp data-i18n="bookWhatsApp">
+                Reservar por WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <img class="tour-image" src="assets/images/car1.jpeg" alt="Tour privado personalizado" loading="lazy" />
+            <h4 data-i18n="tourCustomTitle">Tour privado personalizado</h4>
+            <p>Diseña tu propio recorrido con Juan Carlos.</p>
+            <div class="tour-actions">
+              <button
+                class="btn ghost"
+                onclick="scrollToSection('#custom')"
+                data-i18n="askTour"
+              >
+                Pregunta sobre este tour
+              </button>
+              <button class="btn" data-whatsapp data-i18n="bookWhatsApp">
+                Reservar por WhatsApp
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="packages" class="packages">
+        <div class="packages-inner">
+          <div class="packages-copy">
+            <p class="packages-eyebrow">PAQUETES TURÍSTICOS</p>
+            <h2>BOGOTÁ Y SUS ALREDEDORES</h2>
+            <p>Descubre paisajes, pueblos y cultura colombiana con recorridos privados a tu ritmo.</p>
+            <a class="btn packages-btn" href="#custom">Ver paquetes turísticos <span>→</span></a>
+          </div>
+          <div class="packages-grid">
+            <article><img src="assets/images/monserrate.jpeg" alt="Guatavita" /><strong>Guatavita</strong><span>Naturaleza y leyenda</span></article>
+            <article><img src="assets/images/monserrate.jpeg" alt="Zipaquirá" /><strong>Zipaquirá</strong><span>La Catedral de Sal</span></article>
+            <article><img src="assets/images/monserrate.jpeg" alt="Villa de Leyva" /><strong>Villa de Leyva</strong><span>Historia y tradición</span></article>
+            <article><img src="assets/images/monserrate.jpeg" alt="Otros destinos" /><strong>Otros destinos</strong><span>Más experiencias</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="transport" class="transport">
+        <div class="transport-grid">
+          <div class="transport-photo"><img src="assets/images/car1.jpeg" alt="Servicio privado de transporte" /></div>
+          <div class="transport-copy">
+            <p class="transport-eyebrow">TRANSPORTE ESPECIAL Y EMPRESARIAL</p>
+            <h2>Tu movilidad,<br />nuestra prioridad</h2>
+            <p>Traslados al aeropuerto, reuniones, eventos empresariales y viajes por Bogotá y otros municipios.</p>
+            <a class="btn transport-btn" href="#custom">Ver servicios <span>→</span></a>
+          </div>
+          <div class="transport-features">
+            <div><i>✈</i><span><strong>Traslados</strong><small>El Dorado</small></span></div>
+            <div><i>▦</i><span><strong>Reuniones</strong><small>Empresariales</small></span></div>
+            <div><i>⌖</i><span><strong>Viajes</strong><small>Municipios cercanos</small></span></div>
+            <div><i>◷</i><span><strong>Horarios</strong><small>Programados</small></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="electric" class="section container electric">
+        <h3 class="section-title" data-i18n="electricTitle">
+          100% eléctrico. 100% Bogotá.
+        </h3>
+        <div class="electric-grid">
+          <div class="electric-media">
+            <img
+              src="assets/images/car1.jpeg"
+              alt="100% electric vehicle"
+              loading="lazy"
+            />
+            <span class="badge" data-i18n="electricBadge"
+              >100% VEHÍCULO ELÉCTRICO</span
+            >
+          </div>
+          <div class="electric-text">
+            <ul>
+              <li data-i18n="electricItem1">
+                Cero emisiones directas durante la conducción.
+              </li>
+              <li data-i18n="electricItem2">Conducción silenciosa.</li>
+              <li data-i18n="electricItem3">
+                Experiencia moderna y confortable.
+              </li>
+              <li data-i18n="electricItem4">
+                Una alternativa de movilidad más responsable.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container about">
+        <h3 class="section-title" data-i18n="aboutTitle">
+          Conoce a Juan Carlos
+        </h3>
+        <div class="about-grid">
+          <div class="about-media">
+            <img
+              src="assets/images/monserrate.jpeg"
+              alt="Juan Carlos (photo placeholder)"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <p data-i18n="aboutPara1">
+              Juan Carlos cuenta con amplia experiencia realizando recorridos y
+              tours a nivel nacional. Después de conocer diferentes regiones,
+              destinos y formas de vivir el turismo en Colombia, identificó una
+              oportunidad: ofrecer a quienes visitan Bogotá una experiencia
+              diferente, privada y personalizada.
+            </p>
+            <p data-i18n="aboutPara2">
+              Así nació Juan Carlos E-Ride Bogotá Tours, un servicio creado para
+              recorrer Bogotá y sus municipios cercanos de una manera cómoda,
+              tranquila y responsable con el medio ambiente.
+            </p>
+            <p data-i18n="aboutPara3">
+              Juan Carlos decidió incorporar un vehículo 100 % eléctrico para
+              ofrecer una experiencia de movilidad moderna, silenciosa y
+              confortable, combinando su experiencia como conductor y conocedor
+              de diferentes destinos con una atención personalizada para cada
+              visitante.
+            </p>
+            <p data-i18n="aboutPara4">
+              Su objetivo es que cada persona pueda conocer Bogotá a su propio
+              ritmo, con un recorrido adaptado a sus intereses y acompañado por
+              alguien que conoce la ciudad y sus alrededores.
+            </p>
+            <div class="about-ctas">
+              <a class="btn ghost" href="#contact" data-i18n="aboutButton1"
+                >Conoce a Juan Carlos</a
+              >
+              <a class="btn" href="#custom" data-i18n="aboutButton2"
+                >Planifica tu Tour</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust" class="section container trust">
+        <h3 class="section-title" data-i18n="trustTitle">
+          Viaja con Confianza
+        </h3>
+        <div class="trust-list">
+          <div data-i18n="trustItem1">Experiencia privada</div>
+          <div data-i18n="trustItem2">Servicio personalizado</div>
+          <div data-i18n="trustItem3">Conocimiento local</div>
+          <div data-i18n="trustItem4">Comunicación directa</div>
+          <div data-i18n="trustItem5">Vehículo eléctrico 100%</div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section container gallery">
+        <h3 class="section-title" data-i18n="galleryTitle">Galería</h3>
+        <div class="gallery-grid">
+          <img
+            src="assets/images/monserrate.jpeg"
+            alt="Gallery image 1"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/car1.jpeg"
+            alt="Gallery image 2"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/monserrate.jpeg"
+            alt="Gallery image 3"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="custom" class="section container custom-tour">
+        <h3 class="section-title" data-i18n="customTitle">
+          Tu Bogotá. A tu manera.
+        </h3>
+        <p data-i18n="customDescription">
+          No todos los viajeros quieren hacer el mismo recorrido. Cuéntale a
+          Juan Carlos qué lugares quieres conocer, cuánto tiempo tienes
+          disponible y qué tipo de experiencia buscas. Juntos pueden crear un
+          recorrido privado adaptado a tus intereses.
+        </p>
+        <form id="customForm" class="contact-form" novalidate>
+          <div class="form-grid">
+            <label
+              ><span data-i18n="formName">Nombre</span
+              ><input type="text" name="name" required
+            /></label>
+            <label
+              ><span data-i18n="formEmail">Email</span
+              ><input type="email" name="email" required
+            /></label>
+            <label
+              ><span data-i18n="formWhatsApp">WhatsApp</span
+              ><input
+                type="tel"
+                name="whatsapp"
+                placeholder="+57 300 123 4567"
+                inputmode="tel"
+                autocomplete="tel"
+            /></label>
+            <label
+              ><span data-i18n="formDate">Fecha aproximada</span
+              ><input type="date" name="date" min="" required
+            /></label>
+            <label
+              ><span data-i18n="formPeople">Número de personas</span
+              ><input
+                type="number"
+                name="people"
+                min="1"
+                max="4"
+                step="1"
+                value="1"
+                required
+            /></label>
+            <label
+              ><span data-i18n="formPlaces">Lugares que desea visitar</span
+              ><textarea name="places"></textarea>
+            </label>
+            <label
+              ><span data-i18n="formComments">Comentarios</span
+              ><textarea name="comments"></textarea>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary" data-i18n="formSubmit">
+              Solicitar un Tour Privado
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="whatsapp-banner">
+        <div class="container whatsapp-banner-inner">
+          <p>Más que un viaje,<br /><strong>es una experiencia.</strong></p>
+          <div class="whatsapp-banner-action">
+            <span>Contáctanos por WhatsApp</span>
+            <a id="whatsappBig" href="#" aria-label="Contáctanos por WhatsApp">→</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="Juan Carlos E-Ride Bogotá Tours" />
+        </div>
+        <div class="footer-tagline">Tu destino, <strong>nuestra ruta.</strong></div>
+        <nav class="footer-social" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </nav>
+      </div>
+    </footer>
+
+    <button
+      id="whatsappFloat"
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+      data-i18n="whatsappFloat"
+    >
+      WhatsApp
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="js/main.js?v=2"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const select = document.getElementById("languageSelect");
+        if (select) {
+          select.value = "es";
+        }
+      });
+    </script>
+    <!-- Google Translate placeholder: configurable and easy to enable -->
+    <div id="google_translate_element" style="display: none"></div>
+  </body>
+</html>
